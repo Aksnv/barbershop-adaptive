@@ -2,9 +2,164 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Barbershop Borodinski - Form</title>
+  <title>Barbershop Borodinski - Запись на стрижку</title>
 </head>
 <body>
-
+  <header class="page-header">
+    <a class="logo page-header__logo" href="/">
+      <img class="logo__image" src="" alt="Логотип Barbershop" width="" height="">
+    </a>
+    <nav class="main-navigation page-header__main-navigation">
+      <button class="main-navigation__button main-navigation__button_show" type="button">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
+      <button class="main-navigation__button main-navigation__button_hide" type="button">
+        <span class="visually-hidden">Скрыть меню</span>
+      </button>
+      <ul class="main-navigation__site-navigation site-navigation">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Главная</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="photo.html">Наши работы</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link site-navigation__link_current" href="form.html">Записаться</a>
+        </li>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__user-navigation user-navigation">
+        <li class="user-navigation__item">
+          <a class="user-navigation__link" href="#">Войти</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <a class="button" href="#">На главную</a>
+    <section class="form">
+      <h2 class="title title_h2">Запись на стрижку</h2>
+      <form class="haircut-form" name="haircut-form" action="#" method="POST">
+        <fieldset class="haircut-form__fieldset">
+          <h3 class="visually-hidden title title_h3">Контактные данные:</h3>
+          <label class="visually-hidden haircut-form__label haircut-form__label_surname">
+            Фамилия
+            <input class="haircut-form__input" type="text" name="haircut-form__input_surname" placeholder="Фамилия">
+          </label>
+          <label class="visually-hidden haircut-form__label haircut-form__label_name">
+            Имя
+            <input class="haircut-form__input" type="text" name="haircut-form__input_name" placeholder="Имя">
+          </label>
+          <label class="visually-hidden haircut-form__label haircut-form__label_patronymic">
+            Отчество
+            <input class="haircut-form__input" type="text" name="haircut-form__input_patronymic" placeholder="Отчество">
+          </label>
+          <label class="visually-hidden haircut-form__label haircut-form__label_phone">
+            Контактный телефон
+            <input class="haircut-form__input" type="text" name="haircut-form__input_phone" placeholder="Контактный телефон">
+          </label>
+          <label class="visually-hidden haircut-form__label haircut-form__label_email">
+            Контактный e-mail
+            <input class="haircut-form__input" type="text" name="haircut-form__input_email" placeholder="Контактный e-mail">
+          </label>
+          <label class="visually-hidden haircut-form__label haircut-form__label_info">
+            Доп. информация для мастера
+            <textarea class="haircut-form__input" type="text" name="haircut-form__input_info" placeholder="Доп. информация для мастера"></textarea>
+          </label>
+        </fieldset>
+        <fieldset class="haircut-form__fieldset">
+          <h3 class="title title_h3">Выберите модель бороды:</h3>
+          <ul>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_model_1" type="radio" name="haircut-form__input_model" value="haircut-form__input_model_1" checked>
+              <label class="haircut-form__label haircut-form__label_model_1" for="haircut-form__input_model_1">адмирал</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_model_2" type="radio" name="haircut-form__input_model" value="haircut-form__input_model_2">
+              <label class="haircut-form__label haircut-form__label_model_2" for="haircut-form__input_model_2">лесоруб</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_model_3" type="radio" name="haircut-form__input_model" value="haircut-form__input_model_3">
+              <label class="haircut-form__label haircut-form__label_model_3" for="haircut-form__input_model_3">полярник</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_model_4" type="radio" name="haircut-form__input_model" value="haircut-form__input_model_4">
+              <label class="haircut-form__label haircut-form__label_model_4" for="haircut-form__input_model_4">боярин</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_model_5" type="radio" name="haircut-form__input_model" value="haircut-form__input_model_5">
+              <label class="haircut-form__label haircut-form__label_model_5" for="haircut-form__input_model_5">мудрец</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="haircut-form__fieldset">
+          <h3 class="title title_h3">Дополнительные услуги:</h3>
+          <ul>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_extra_1" type="checkbox" name="haircut-form__input_extra" value="haircut-form__input_extra_1" checked>
+              <label class="haircut-form__label haircut-form__label_extra_1" for="haircut-form__input_extra_1">Подкрасить бороду</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_extra_2" type="checkbox" name="haircut-form__input_extra" value="haircut-form__input_extra_2" checked>
+              <label class="haircut-form__label haircut-form__label_extra_2" for="haircut-form__input_extra_2">Накрутить усы</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_extra_3" type="checkbox" name="haircut-form__input_extra" value="haircut-form__input_extra_3">
+              <label class="haircut-form__label haircut-form__label_extra_3" for="haircut-form__input_extra_3">Причесать бороду</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_extra_4" type="checkbox" name="haircut-form__input_extra" value="haircut-form__input_extra_4">
+              <label class="haircut-form__label haircut-form__label_extra_4" for="haircut-form__input_extra_4">Подровнять виски</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_extra_5" type="checkbox" name="haircut-form__input_extra" value="haircut-form__input_extra_5">
+              <label class="haircut-form__label haircut-form__label_extra_5" for="haircut-form__input_extra_5">Убрать седину</label>
+            </li>
+            <li>
+              <input class="haircut-form__input" id="haircut-form__input_extra_6" type="checkbox" name="haircut-form__input_extra" value="haircut-form__input_extra_6">
+              <label class="haircut-form__label haircut-form__label_extra_6" for="haircut-form__input_extra_6">Отполировать лысину</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button" type="submit">Отправить заявку</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <ul class="page-footer__items">
+      <li class="page-footer__item page-footer__item_contacts contacts">
+        <b class="contacts__text contacts__text_bold">Барбершоп Бородинский</b>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <p class="contacts__text contacts__text_bold contacts__text_phone">+7 (812) 555-66-66</p>
+      </li>
+      <li class="page-footer__item page-footer__item_socials socials">
+        <p class="socials__text">Давайте дружить!</p>
+        <ul class="socials__items">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="page-footer__item page-footer__item_copyrights copyrights">
+        <p class="copyrights__text">Разработано:</p>
+        <b class="copyrights__text copyrights__text_bold">HTML Academy</b>
+      </li>
+    </ul>
+  </footer>
 </body>
 </html>
+
